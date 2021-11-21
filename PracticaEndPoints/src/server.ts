@@ -18,12 +18,22 @@ const run = async() => {
         
         const client = await mongoConnect("mongodb+srv://alsanpe:nebrija@clusternebrija.qdkdq.gcp.mongodb.net/RickYMorty?retryWrites=true&w=majority")
         const db: Db = client.db("RickYMorty")
-       
+
+        
 
     }catch(e){
         console.log(e);
     }
 }
+
+ /*
+    app.use((req,res,next)=>{
+    console.log(req.query.token || "No token");
+    console.log(req.headers["auth-token"]);
+    if(req.query.token === "dfgdfgfdgdfgdadf")
+       next();
+    else res.status(403).send("Not authorised")
+ }); */
 
  app.get("/status", getStatus)
  app.get("/characters", getCharacters)
