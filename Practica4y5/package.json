@@ -1,0 +1,35 @@
+{
+  "name": "practica4y5",
+  "version": "1.0.0",
+  "description": "Crear una API en graphQL que permita gestionar un blog de recetas. Los datos se guardarán en MongoDB Atlas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "debug": "nodemon --exec npm run start-inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alsanpe22/ArquitecturaYProgramacionI_21-22.git"
+  },
+  "author": "Alvaro Sanchiz Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alsanpe22/ArquitecturaYProgramacionI_21-22/issues"
+  },
+  "homepage": "https://github.com/Alsanpe22/ArquitecturaYProgramacionI_21-22#readme",
+  "dependencies": {
+    "@types/node": "^16.11.12",
+    "apollo-server-express": "^3.5.0",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.2.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.10",
+    "@types/uuid": "^8.3.3"
+  }
+}
